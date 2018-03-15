@@ -1,7 +1,13 @@
-n = 9
+n = 7
 
 if n>1:
     for i in range(2,n):
         print("i=",i)
         if n%i==0:
-            print(x,"不是一个质数")
+            print(n,"不是一个质数")
+            break
+    else:
+        print(n,"是一个质数")
+else:
+    print(n,"不是一个质数")
+        
