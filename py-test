@@ -1,5 +1,7 @@
-print("kkkk")
+n = 9
 
-2222
-2222
-11111
+if n>1:
+    for i in range(2,n):
+        print("i=",i)
+        if n%i==0:
+            print(x,"不是一个质数")
