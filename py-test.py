@@ -1,17 +1,15 @@
-xs = [25, 25, 25, 25, 25, 25, 25, 50, 50, 50, 100, 100, 100, 100]
-
-def ii(p):
-    gg = []
-    
-    for i in p:
-        if i > 50:
-            gg.append("大于50")
-        elif i < 50:
-            gg.append("小于50")
+#A和T配对，G和C配对
+def dna_decode(dna):
+    dna = dna.upper()
+    r_dna = ''
+    dnadict = {'A':'T','T':'A','G':'C','C':'G'}
+    for i in dna:
+        if i in dnadict:
+            r_dna += dnadict[i]
         else:
-            gg.append("等于50")
-    return gg
+            r_dna += i
+    return r_dna
 
-x = ii(xs)
-print(x)  
 
+x = 'aaabbbcccddd'
+print(dna_decode(x))
