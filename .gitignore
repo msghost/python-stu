@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+test-dingtalk/data.py
+.vscode/launch.json
+.vscode/settings.json
